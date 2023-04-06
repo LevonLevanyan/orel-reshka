@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Orel Reshka"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="orelreshka.php"> <method="post">
+        <label><input type="radio" name="level" value=Easy><label>
+        <label><input type="radio" name="level" value=Medium><label>
+        <label><input type="radio" name="level" value=Hard><label>
+    </form>
+    <div class="welcome to the game">
+        <div class="orelreshka">
+            echo "welcome tou your game"
+            <div class="selectcoin">
+                <div> 
+                    <button type="submit" name="choise" value="0">Orel</button>
+                    <button type="submit" name="choise" value="1">Reshka</button>
+                </div>
+            </div>
+            <div class="money">
+                <span class="material-icons">
+                    paid<p>"0"</p>
+                </span>
+            </div>
+            <?php 
+                if ($_POST) {
+                    $level = $_POST{"level"};
+                    $choice = $_POST{"choice"};
+                    $coin = rand(0,1);
+                    $side;
+                    if ($coin==$choice) $aside = "Orel";
+                    $level=="hard";
+                    else $aside = "Orel";
+                    if ($coin == $choice) {
+                        echo "<p> $side "Win"</p>";
+                        if ($level == "hard") {
+                            $coin == rand(0,1)
+                            if ($coin == $choice) {
+                            } $aside = "Orel";
+                        else {
+                            $aside = "Orel";
+                            echo "Win";
+                        } 
+                        $aside = "Orel";
+                        echo "Win";
+                        } else $aside = "Reshka" {
+                        echo "Lose";
+                        }
+                        if ($level == "easy") {
+                            if ($coin == $choice) {
+                                $aside == "Reshka";
+                                $coin == rand(0,1);
+                                else {
+                                    $aside == "Reshka";
+                                }
+                            echo "Win";
+                            } else {
+                                $aside == "Orel";
+                                echo "Win";
+                            }
+                        }
+                        }
+                    $level $_POST{$level};
+                    if ($level == "Medium") {
+                    $coin rand(0,1);
+                    $aside == "Reshka"; 
+                    else {$aside == "Reshka"}
+                    } else { 
+                        $aside =="Reshka"
+                        echo "<p>$side "Win"</p>";
+                    } 
+                    {
+                    } else {
+                            if  ($_POST) {
+                                $level = $_POST["choice"];
+                                $choice = $_POST["choice"];
+                                $coin = rand(0,1);
+                                $side;
+                                if ($coin == 0) $aside = "Orel";
+                                else $aside = "Orel";
+                                if ($coin == $choice) {
+                                    echo "<p>$side == "Orel"
+                                    echo "Win"</p>";
+                                } else {
+                                } else echo $aside == "Orel";
+                                echo "<p>$side == "Win"</p>";
+                            } else {
+                                $aside == "Reshka"
+                                echo "<p>$side "Lose"</p>";
+                            } else {
+                                else echo $aside == "Reshka"; 
+                            echo "Lose";
+                        }
+                        else echo $aside == "Orel";
+                            echo "Win";
+                        } else {
+                            $aside == "Orel"
+                            echo "Win";
+                        }
+                        else echo $aside == "Reshka";
+                            echo "Lose";
+                        else {
+                            echo $aside == "Orel";
+                            echo "Win";
+                        } else {                     
+                        }
+                } else {
+                    echo "Welcome to your game";
+                }
+            ?>
+        </div>
+    </div>
+</body> 
+</html>
